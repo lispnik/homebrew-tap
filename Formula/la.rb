@@ -2,7 +2,6 @@
 class La < Formula
   desc "Extract, create, list and compare archives in every format libarchive handles"
   homepage "https://github.com/lispnik/libarchive"
-  version "0.2.0"
   license "MIT"
 
   on_macos do
