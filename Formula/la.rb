@@ -6,28 +6,31 @@ class La < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.2.0/la-macos-arm64.tar.gz"
-      sha256 "5a1dcb78c296cef7901b50eb7cbac7ccb5ec35cb20e9b773972a26be12604b36"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.3.0/la-macos-arm64.tar.gz"
+      sha256 "17ea2253cf9686271ef5ea0fb82f922304d41894dcfe2424261be28abd495452"
     end
     on_intel do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.2.0/la-macos-x86_64.tar.gz"
-      sha256 "ecd0df5138211667c39485f3b1a615959fe79ff0529dd064170fe030cc5a1e3e"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.3.0/la-macos-x86_64.tar.gz"
+      sha256 "802d908ebe123d40a88cab6d23e77d404d7dd97961474755edbbfa8ab97a3222"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.2.0/la-linux-aarch64.tar.gz"
-      sha256 "4340a24a8013fbeabc0e5fceeeb60e6d537f617e22e4741438b81aa039515221"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.3.0/la-linux-aarch64.tar.gz"
+      sha256 "8274863dd74734e073a65726036b3819fc76205ada3128d044c8dfceebbbcad9"
     end
     on_intel do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.2.0/la-linux-x86_64.tar.gz"
-      sha256 "ee1970ca168a512d5591dc5131606ee90995eafab492ba6b618f243742add53e"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.3.0/la-linux-x86_64.tar.gz"
+      sha256 "626b445f7b135d7aa63e271695fba795501a0e89d6760d5afe17f0d19c8823e0"
     end
   end
 
   def install
     bin.install "la"
+    man1.install "la.1"
+    zsh_completion.install "_la"
+    bash_completion.install "la.bash" => "la"
   end
 
   test do
