@@ -6,23 +6,23 @@ class La < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.3.1/la-macos-arm64.tar.gz"
-      sha256 "da0a39f0187ab36aaddc84f5a5cefacc728228898ef0a4ff06b57fefc63a6fc2"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.4.0/la-macos-arm64.tar.gz"
+      sha256 "b2660919001177e96a61cd2065f4780a34b52534527758805f1d9a7284f1f792"
     end
     on_intel do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.3.1/la-macos-x86_64.tar.gz"
-      sha256 "c5bd09e3fcd5dc9b3f4749e971c208ceb4518819b22b2da4ddf7ad6fdb3217ff"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.4.0/la-macos-x86_64.tar.gz"
+      sha256 "d000033826ac1edd7f48f5a64e8627963a136d1db29afa28acab4f6f099b8fed"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.3.1/la-linux-aarch64.tar.gz"
-      sha256 "cc88773857f31067513879291414d7a01d6f1b1c451e11f154e0f294f59cd3b0"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.4.0/la-linux-aarch64.tar.gz"
+      sha256 "735d87a9900a3642aa798ecc82e9a479f680df33c88aee033e81c651a7d27f10"
     end
     on_intel do
-      url "https://github.com/lispnik/libarchive/releases/download/v0.3.1/la-linux-x86_64.tar.gz"
-      sha256 "98795e3c61dcc51feddadd6722c0092cb1ba92e0d3ed0a6d552362a6f323e7ae"
+      url "https://github.com/lispnik/libarchive/releases/download/v0.4.0/la-linux-x86_64.tar.gz"
+      sha256 "0c15d75411c3bbe1a2f005d89e6f95947fad544bff5d462ba35bc98426cf032e"
     end
   end
 
